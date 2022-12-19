@@ -1,0 +1,4 @@
+(def plus_one [a:Number]
+  (+ a 1))
+
+(plus_one 2)

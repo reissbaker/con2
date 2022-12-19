@@ -1,0 +1,17 @@
+{
+  "name": "con",
+  "version": "0.0.1",
+  "description": "programming language",
+  "main": "build/index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@reissbaker",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.11.17"
+  }
+}
