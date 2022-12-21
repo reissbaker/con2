@@ -16,8 +16,8 @@ Con {
   openBrace = "{"
   closeBrace = "}"
 
-  LeadingPair = word colon Expr comma
-  Pair = word colon Expr
+  LeadingPair = Expr colon Expr comma
+  Pair = Expr colon Expr
 
   literal = word | number | operator
 
