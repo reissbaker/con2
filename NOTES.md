@@ -12,3 +12,8 @@ to whatever, or even convert it to JSON. Maybe this is just structural/zod for
 Con actually, but built in. And .jcon files can be imported and type-checked,
 and the subset will be enforced. Okay: Jcon is the language subset; then you
 can convert to JSON, or convert from JSON via structural-like.
+
+TODO: add column numbers to the IR AST, so you can convert to Babel's AST and
+generate accurate source maps.
+
+TODO: you can infer the s-calculus types for functions.
