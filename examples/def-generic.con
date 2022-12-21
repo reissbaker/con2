@@ -1,0 +1,4 @@
+(def plus_one (where [T] {a: (+ T number)})
+  (+ a 1))
+
+(plus_one 2)

@@ -1,0 +1,2 @@
+(def area {side_a: Arithmetic, side_b: Arithmetic}
+  (* a b))

@@ -1,0 +1,32 @@
+Con {
+  Program = Expr*
+
+  Expr = Call | List | Dict | literal
+
+  Call = openParen Expr* closeParen
+  List = openBracket Expr* closeBracket
+  Dict = EmptyDict | FullDict
+  EmptyDict = openBrace closeBrace
+  FullDict = openBrace LeadingPair* Pair closeBrace
+
+  openParen = "("
+  closeParen = ")"
+  openBracket = "["
+  closeBracket = "]"
+  openBrace = "{"
+  closeBrace = "}"
+
+  LeadingPair = word colon Expr comma
+  Pair = word colon Expr
+
+  literal = word | number | operator
+
+  operator = "+" | "-" | "*" | "/" | "%"
+  word = (letter | "_")+(alnum | "_")*
+  number = float | int
+  float = int dot int
+  int = digit+
+  dot = "."
+  comma = ","
+  colon = ":"
+}

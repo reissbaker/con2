@@ -1,4 +1,4 @@
-(def plus_one [a:Arithmetic]
+(def plus_one {a: Arithmetic}
   (+ a 1))
 
 (plus_one 2)

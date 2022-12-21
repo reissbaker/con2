@@ -7,11 +7,16 @@
     "example": "examples"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "./gen-grammar.sh"
   },
   "author": "@reissbaker",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^18.11.17"
+    "@types/node": "^18.11.17",
+    "ohm-js": "^16.6.0"
+  },
+  "devDependencies": {
+    "@ohm-js/cli": "^1.1.0"
   }
 }
